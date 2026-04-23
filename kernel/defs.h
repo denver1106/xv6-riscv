@@ -9,6 +9,11 @@ struct sleeplock;
 struct stat;
 struct superblock;
 
+//for print page table
+void vmprint_recursion(pagetable_t, int);
+void vmprint(pagetable_t);
+
+
 // bio.c
 void            binit(void);
 struct buf*     bread(uint, uint);
